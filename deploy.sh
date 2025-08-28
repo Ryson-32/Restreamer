@@ -131,7 +131,7 @@ services:
       - "${SRT_PORT}:6000/udp" # SRT
     environment:
       - CORE_RTMP_ENABLE=true
-      - CORE_RTMP_ENABLE_TLS=true
+      - CORE_RTMP_ENABLE_TLS=false
       - CORE_RTMP_TOKEN=${RTMP_TOKEN}
       - TZ=Asia/Shanghai
     volumes:
